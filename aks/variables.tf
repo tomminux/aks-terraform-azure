@@ -26,3 +26,8 @@ variable "subnet_name" {
   description = ""
   type = string
 }
+
+variable "aks_cluster_admins_name" {
+  description = ""
+  type = string
+}

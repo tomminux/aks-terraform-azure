@@ -30,7 +30,8 @@ module "aks" {
   agents_max_count                 = 10
   os_disk_size_gb                  = 30
   agents_max_pods                  = 100
-  agents_pool_name                 = "${var.cluster_name}pool"
+  #agents_pool_name                 = "${var.cluster_name}pool"
+  agents_pool_name                 = "defaultpool"
   agents_type                      = "VirtualMachineScaleSets"
   enable_auto_scaling              = false
   
