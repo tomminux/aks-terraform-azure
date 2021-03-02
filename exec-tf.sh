@@ -5,10 +5,9 @@
 
 usage(){
 	echo "
-  Usage: $0 <infrastructure_module> <noNodes>
+  Usage: $0 <infrastructure_module>
  
   infrastructure_module: aks
-  noNodes:               Number of nodes
 "
 	exit 1
 }
@@ -18,7 +17,7 @@ usage(){
 
 IS_MODULE_NAME_SET=0
 
-[[ $# -eq 0 || $# -eq 1 ]] && usage
+[[ $# -eq 0 ]] && usage
 
 if [[ $1 == "aks" ]]
 then
@@ -28,11 +27,11 @@ else
 	usage
 fi
 
-re='^[0-9]+$'
-if ! [[ $2 =~ $re ]]
-then
-	usage
-fi
+# re='^[0-9]+$'
+# if ! [[ $2 =~ $re ]]
+# then
+# 	usage
+# fi
 
 cd $WORKING_DIR
 

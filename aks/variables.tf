@@ -31,3 +31,8 @@ variable "aks_cluster_admins_name" {
   description = ""
   type = string
 }
+
+variable "is_privatre_cluster" {
+  description = ""
+  type = bool
+}
