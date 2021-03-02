@@ -44,7 +44,11 @@ module "aks" {
   net_profile_dns_service_ip       = "192.168.0.10"
   net_profile_docker_bridge_cidr   = "172.17.0.1/16"
   net_profile_service_cidr         = "192.168.0.0/16"
+<<<<<<< HEAD
   private_cluster_enabled          = var.is_private_cluster
+=======
+  private_cluster_enabled          = true
+>>>>>>> 755f4addb5497b719424143ad64f3a5e97df7780
 
   tags = {
     "owner": var.owner_name
